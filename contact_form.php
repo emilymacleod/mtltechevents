@@ -33,7 +33,7 @@ $sendmessage = "<div style=\"background-color:#cccccc; color:white;\">" . $templ
 // Message lines should not exceed 70 characters (PHP rule), so wrap it.
 $sendmessage = wordwrap($sendmessage, 70);
 // Send mail by PHP Mail Function.
-mail("margaretemacleod@gmail.com", $subject, $sendmessage, $headers);
+mail("http://formspree.io/margaretemacleod@gmail.com", $subject, $sendmessage, $headers);
 echo "Your Query has been received, We will contact you soon.";
 }
 } else {
